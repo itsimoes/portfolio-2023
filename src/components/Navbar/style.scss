@@ -1,0 +1,25 @@
+.navbar_wrapper {
+  position: absolute;
+  width: 100vw;
+
+  h4 {
+    font-family: "Libre Baskerville", serif;    
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
+.navbar_container {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_title {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar_about {
+  padding-left: 30px;
+  padding-right: 30px;
+}
