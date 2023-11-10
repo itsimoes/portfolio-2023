@@ -1,13 +1,25 @@
+:root {
+  --primary_white: white;
+  --primary_black: #515971;
+  --primary_coral: #FF7C87;
+  --primary_gray: #F8F8F8;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
+  -webkit-tap-highlight-color: transparent; //disable links default hover color background
+ *:focus {
+  outline-color: var(--primary_coral);
+ }
 }
 
 code {
+  font-family: 'Bad Script', cursive;
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
