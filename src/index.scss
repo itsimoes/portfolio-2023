@@ -25,3 +25,131 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+//buttons and animations
+button {
+  border: 0;
+  cursor: pointer;
+  // Required, since we're setting absolute on pseudo-elements
+  position: relative;
+  vertical-align: middle;
+  background-color: transparent;
+  border-radius: 20px;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.spin {
+  padding: 0;
+
+  &:hover {
+    color: var(--primary_coral);
+  }
+
+  &::before,
+  &::after {
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    border: 2px solid transparent; // We're animating border-color again
+  }
+
+  &:hover::before {
+    border-top-color: var(--primary_coral); // Show borders
+    border-right-color: var(--primary_coral);
+    border-bottom-color: var(--primary_coral);
+
+    transition: border-top-color 0.25s linear,
+      // Stagger border appearances
+      border-right-color 0.1s linear 0.26s,
+      border-bottom-color 0.26s linear 0.5s;
+  }
+
+  &::after {
+    border: 0 solid transparent; // Makes border thinner at the edges? I forgot what I was doing
+  }
+
+  &:hover::after {
+    border-top: 2px solid var(--primary_coral); // Shows border
+
+    border-top-width: 2px; // Solid edges, invisible borders
+    border-left-width: 2px; // Solid edges, invisible borders
+    border-right-width: 2px; // Solid edges, invisible borders
+    transform: rotate(270deg); // Rotate around circle
+    transition: transform 1s linear 0s, border-top-width 0s linear 0s,
+      border-left-width 0s linear 1s, box-shadow linear 1.2s; // Solid edge post-rotation
+    //box shadow
+    box-shadow: var(--primary_coral) 0px 0px 10px;
+  }
+}
+
+.circle {
+  border-radius: 100%;
+  &::before,
+  &::after {
+    border-radius: 100%;
+  }
+}
+
+.draw {
+  transition: color 0.25s;
+
+  &::before,
+  &::after {
+    // Set border to invisible, so we don't see a 4px border on a 0x0 element before the transition starts
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+
+  // This covers the top & right borders (expands right, then down)
+  &::before {
+    top: 0;
+    left: 0;
+  }
+
+  // And this the bottom & left borders (expands left, then up)
+  &::after {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:hover {
+    color: var(--primary_coral);
+  }
+
+  // Hover styles
+  &:hover::before,
+  &:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    border-top-color: var(--primary_coral); // Make borders visible
+    border-right-color: var(--primary_coral);
+    transition: width 0.25s ease-out,
+      // Width expands first
+      height 0.25s ease-out 0.25s; // And then height
+  }
+
+  &:hover::after {
+    border-bottom-color: var(--primary_coral); // Make borders visible
+    border-left-color: var(--primary_coral);
+    transition: border-color 0s ease-out 0.5s,
+      // Wait for ::before to finish before showing border
+      width 0.25s ease-out 0.5s,
+      // And then exanding width
+      height 0.25s ease-out 0.75s; // And finally height
+  }
+}

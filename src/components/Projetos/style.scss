@@ -1,0 +1,73 @@
+.projetos_wrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.projetos_carousel_card {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 40px;
+  height: 398px;
+  width: 700px;
+  margin: 0 auto;
+  display: flex;  
+  justify-content: flex-end;
+  align-items: flex-end;  
+}
+
+.projetos_carousel_card_button_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;     
+  padding: 20px;
+  
+  svg path {
+    fill: var(--primary_coral);    
+  }
+
+  transition: box-shadow 0.5s linear;
+}
+
+.projetos_carousel_card_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  padding: 10px;  
+}
+
+.projetos_carousel_image_wrapper {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.projetos_carousel_card_desktop {
+  width: 650px;
+  height: 500px;
+}
+
+.projetos_carousel_card_mobile {
+  width: 158px;
+  height: 299px;
+  z-index: 1;    
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 10px;
+  border: 2px solid var(--primary_white);
+  background-color: var(--primary_white);
+}
+
+//cards
+
+#projetos_carousel_1 {
+  background: url("../../assets/barros1080p.png") top no-repeat;
+  background-size: contain;
+}
+
+#projetos_carousel_2 {
+  background: url("../../assets/dictionary1080p.png") top no-repeat;
+  background-size: contain;
+  background-color: var(--primary_white);
+}
+
