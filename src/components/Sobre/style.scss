@@ -15,10 +15,6 @@
 .sobre_imagem_container {
   transition: box-shadow linear 0.3s;
 }
-.sobre_imagem_container:hover {
-  transition: box-shadow linear 0.3s;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 12px;
-}
 
 .sobre_image_card {
   width: 1200px;
