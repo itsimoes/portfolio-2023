@@ -26,16 +26,12 @@ const Home = () => {
       <div className="home_link_wrapper">
         <a href="https://github.com/itsimoes" rel="noreferrer" target="_blank">
           <button className="home_social_media_icon_container draw">
-            <div>
               <GithubIcon />
-            </div>
           </button>
         </a>
         <a href=" " rel="noreferrer" target="_blank">
           <button className="home_social_media_icon_container draw">
-            <div>
               <InstagramIcon />
-            </div>
           </button>
         </a>
         <a
@@ -44,9 +40,7 @@ const Home = () => {
           target="_blank"
         >
           <button className="home_social_media_icon_container draw">
-            <div>
               <LinkedinIcon />
-            </div>
           </button>
         </a>
       </div>
