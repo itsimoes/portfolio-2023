@@ -5,6 +5,7 @@ import { config } from "react-spring";
 
 import barrosMobile from "../../assets/barrosMobile.png";
 import disctionaryMobile from "../../assets/dictionaryMobile.png";
+import nsadvocaciaMobile from "../../assets/nsadvocaciaMobile.png";
 
 //icons
 import { ReactComponent as GithubIcon } from "../../assets/github_icon.svg";
@@ -56,42 +57,8 @@ export default class Example extends Component {
       content: (
         <div id="projetos_carousel_2" className="projetos_carousel_card">
           <div className="projetos_carousel_card_button_wrapper">
-            <a
-              href="https://github.com/itsimoes/free-dictionary"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <GithubIcon />
-              </button>
-            </a>
-            <a
-              href="https://itsimoes.github.io/free-dictionary/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <WWWIcon />
-              </button>
-            </a>
-          </div>
-          <div className="projetos_carousel_image_wrapper">
-            <img
-              src={disctionaryMobile}
-              className="projetos_carousel_card_mobile"
-              alt=""
-            />
-          </div>
-        </div>
-      ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <div id="projetos_carousel_1" className="projetos_carousel_card">
-          <div className="projetos_carousel_card_button_wrapper">
           <a
-              href="https://github.com/itsimoes"
+              href="https://github.com/itsimoes/ns-advocacia"
               rel="noreferrer"
               target="_blank"
             >
@@ -100,7 +67,7 @@ export default class Example extends Component {
               </button>
             </a>
             <a
-              href="https://github.com/itsimoes"
+              href="https://itsimoes.github.io/ns-advocacia/"
               rel="noreferrer"
               target="_blank"
             >
@@ -111,7 +78,7 @@ export default class Example extends Component {
           </div>
           <div className="projetos_carousel_image_wrapper">
             <img
-              src={barrosMobile}
+              src={nsadvocaciaMobile}
               className="projetos_carousel_card_mobile"
               alt=""
             />
@@ -122,71 +89,39 @@ export default class Example extends Component {
     {
       key: uuidv4(),
       content: (
-        <div id="projetos_carousel_1" className="projetos_carousel_card">
-          <div className="projetos_carousel_card_button_wrapper">
-          <a
-              href="https://github.com/itsimoes"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <GithubIcon />
-              </button>
-            </a>
-            <a
-              href="https://github.com/itsimoes"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <WWWIcon />
-              </button>
-            </a>           
-          </div>
-          <div className="projetos_carousel_image_wrapper">
-            <img
-              src={barrosMobile}
-              className="projetos_carousel_card_mobile"
-              alt=""
-            />
-          </div>
-        </div>
+       
+         <div id="projetos_carousel_3" className="projetos_carousel_card">
+         <div className="projetos_carousel_card_button_wrapper">
+           <a
+             href="https://github.com/itsimoes/free-dictionary"
+             rel="noreferrer"
+             target="_blank"
+           >
+             <button className="projetos_carousel_card_button draw">
+               <GithubIcon />
+             </button>
+           </a>
+           <a
+             href="https://itsimoes.github.io/free-dictionary/"
+             rel="noreferrer"
+             target="_blank"
+           >
+             <button className="projetos_carousel_card_button draw">
+               <WWWIcon />
+             </button>
+           </a>
+         </div>
+         <div className="projetos_carousel_image_wrapper">
+           <img
+             src={disctionaryMobile}
+             className="projetos_carousel_card_mobile"
+             alt=""
+           />
+         </div>
+       </div>
       ),
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <div id="projetos_carousel_1" className="projetos_carousel_card">
-          <div className="projetos_carousel_card_button_wrapper">
-          <a
-              href="https://github.com/itsimoes"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <GithubIcon />
-              </button>
-            </a>
-            <a
-              href="https://github.com/itsimoes"
-              rel="noreferrer"
-              target="_blank"
-            >
-              <button className="projetos_carousel_card_button draw">
-                <WWWIcon />
-              </button>
-            </a>            
-          </div>
-          <div className="projetos_carousel_image_wrapper">
-            <img
-              src={barrosMobile}
-              className="projetos_carousel_card_mobile"
-              alt=""
-            />
-          </div>
-        </div>
-      ),
-    },
+    },    
+    
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
   });
