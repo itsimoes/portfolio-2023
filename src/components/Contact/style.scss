@@ -1,0 +1,142 @@
+.contact_wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact_message_container {
+  font-size: 4rem;
+  font-weight: 400;
+  padding-right: 100px;
+
+}
+
+#contact_message_1 {
+  font-family: "Just Me Again Down Here", cursive;
+  span {
+    color: var(--primary_coral);
+  }
+}
+
+#contact_message_2 {
+  font-size: 3rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+//contact form
+
+.contact_form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_form_title {
+    font-family: "Just Me Again Down Here", cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.contact_form_wrapper {
+  width: 400px;
+  height: 550px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--primary_gray);
+  padding: 30px;
+  border: 2px solid var(--secondary_gray);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.contact_input_field {
+  width: 380px;
+  height: 58px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  border: 2px solid var(--secondary_gray);
+  background-color: var(--primary_white);
+
+  padding-left: 20px;
+  font-family: Overpass;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: var(--input_color);
+
+  &::placeholder {
+    color: lightgray;
+  }
+}
+
+.contact_textarea {
+  width: 400px;
+  height: 193px;
+  box-sizing: border-box;
+  resize: none;
+  margin-top: 8px;
+  border: 2px solid var(--secondary_gray);
+  border-radius: 10px;
+  background-color: var(--primary_white);
+
+  //text
+  padding: 20px;
+  font-family: Overpass;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.20000000298023224px;
+  color: var(--input_color);
+
+  
+  &::placeholder {
+    color: lightgray;
+  }
+}
+
+.contact_submit_button {
+    align-self: center;
+    width: 200px;
+    height: 56px;
+    border: none;
+    border-radius: 35px;
+    color: var(--primary_white);
+    background-color: var(--primary_coral);
+    cursor: pointer;
+    //text
+    font-family: "Libre Baskerville", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    transition: all 0.3s;
+  }
+  
+  .contact_submit_button:hover {
+    opacity: 70%;
+  }
+  
+  #confirmation_message {
+    visibility: hidden;
+    margin-top: 30px;
+  
+    //text
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.20000000298023224px;
+    color: var(--primary_coral);
+  }
+  
