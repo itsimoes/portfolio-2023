@@ -5,6 +5,7 @@ import "./style.scss";
 import { ReactComponent as GithubIcon } from "../../assets/github_icon.svg";
 import { ReactComponent as InstagramIcon } from "../../assets/instagram_icon.svg";
 import { ReactComponent as LinkedinIcon } from "../../assets/linkedin_icon.svg";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
         </h1>
         <h3>Desenvolvedor Web</h3>
         <h4>
-          Precisa de ajuda com seu projeto? <a><button className="home_contact_link_container draw"><h4>Vamos conversar.</h4></button></a>
+          Precisa de ajuda com seu projeto?  <Link to="contato" smooth spy hashSpy><button className="home_contact_link_container draw"><h4>Vamos conversar.</h4></button></Link>
         </h4>
       </div>
       <div className="home_link_wrapper">
