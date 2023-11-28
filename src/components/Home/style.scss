@@ -1,7 +1,9 @@
 .home_wrapper {
-  width: 100vw;
   height: 100vh;
   color: var(--primary_black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .home_avatar_wrapper {
@@ -9,17 +11,17 @@
   justify-content: center;
   padding: 6rem;
   background: -webkit-linear-gradient(
-      86deg,
-      var(--primary_white) 50%,
-      // transparent 50.5%
-      var(--primary_gray) 50%),
-    // url("../../assets/gray_concrete.jpg");
-    
+    86deg,
+    var(--primary_white) 50%,
+    // transparent 50.5%
+    var(--primary_gray) 50%
+  );
+  // url("../../assets/gray_concrete.jpg");
 }
 
 .home_avatar {
   width: 150px;
-  height: 150px;  
+  height: 150px;
   background-image: url("../../assets/it_avatar.png");
   background-size: 150px;
   border: 7px solid var(--primary_white);
@@ -33,14 +35,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
   span {
     color: var(--primary_coral);
   }
 
   h1 {
-    font-family: "Bad Script";
+    font-family: 'Just Me Again Down Here', cursive;
     font-size: 4rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 2px var(--primary_black);
   }
 
   h3,
@@ -54,13 +59,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  margin: 6rem;
 
-  a svg {
-    width: 50px;
-    fill: var(--primary_coral);
-    path {
+  a {
+    // margin: 20px;
+    padding: 10px;
+
+    svg {
+      width: 50px;
       fill: var(--primary_coral);
+      path {
+        fill: var(--primary_coral);
+      }
     }
   }
 }
@@ -193,16 +203,12 @@ button {
 }
 
 .home_social_media_icon_container {
-  background-color: transparent;
-  border-radius: 20px;
-
-  width: 50px;
-  height: 50px;
-  margin: 20px;
-  div {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
 }
 
 .home_contact_link_container {
