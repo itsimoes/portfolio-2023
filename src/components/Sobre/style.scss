@@ -52,3 +52,17 @@
     }
   }
 }
+
+// media query mobile
+@media (max-width: 450px) {
+  .sobre_image_card {
+    width: 360px;
+    height: 170px;
+  }
+
+  .sobre_text {
+    width: 360px;
+  
+  }
+
+}
