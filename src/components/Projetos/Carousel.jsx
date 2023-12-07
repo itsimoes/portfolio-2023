@@ -37,7 +37,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <WWWIcon />
               </button>
             </a>
@@ -62,7 +62,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <GithubIcon />
               </button>
             </a>
@@ -71,7 +71,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <WWWIcon />
               </button>
             </a>          
@@ -97,7 +97,7 @@ export default class Example extends Component {
              rel="noreferrer"
              target="_blank"
            >
-             <button className="projetos_carousel_card_button draw">
+             <button className="projetos_carousel_card_button">
                <GithubIcon />
              </button>
            </a>
@@ -106,7 +106,7 @@ export default class Example extends Component {
              rel="noreferrer"
              target="_blank"
            >
-             <button className="projetos_carousel_card_button draw">
+             <button className="projetos_carousel_card_button">
                <WWWIcon />
              </button>
            </a>
