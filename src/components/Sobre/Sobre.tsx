@@ -5,7 +5,7 @@ const Sobre = () => {
   return (
     <div id="sobre" className="sobre_wrapper">
       <h2>Sobre mim</h2>
-      <div className="sobre_imagem_container">
+      <div className="sobre_image_container">
         <div className="sobre_image_card" />
       </div>
       <br />

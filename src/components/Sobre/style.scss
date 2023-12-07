@@ -12,22 +12,43 @@
   }
 }
 
-.sobre_imagem_container {
+.sobre_image_container {
   transition: box-shadow linear 0.3s;
 }
 
 .sobre_image_card {
   width: 1200px;
   height: 500px;
-  background: url("../../assets/it_avatar.png") center no-repeat;
+  background: url("../../assets/it_sobre_banner_gray.png") center no-repeat;
   background-size: cover;
 }
 
 .sobre_text {
   width: 1200px;
   text-align: justify;
-    
+
   h3 {
     font-weight: 400;
+  }
+}
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  .sobre_wrapper {
+    h2 {
+      margin: 10px;
+    }
+  }
+  .sobre_image_card {
+    width: 800px;
+    height: 350px;
+  }
+
+  .sobre_text {
+    width: 800px;
+
+    h3 {
+      font-size: 14px;
+    }
   }
 }

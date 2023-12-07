@@ -1,10 +1,10 @@
 .navbar_wrapper {
-  position: absolute;  
+  position: absolute;
   display: flex;
   width: 100%;
-  
+
   h4 {
-    font-family: "Libre Baskerville", serif;    
+    font-family: "Libre Baskerville", serif;
     font-size: 15px;
     font-weight: 400;
   }
@@ -12,14 +12,14 @@
 .navbar_container {
   padding: 2rem;
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
 .navbar_title {
-    padding-left: 30px;
-    padding-right: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .navbar_about {
   padding-left: 30px;
@@ -27,11 +27,9 @@
   color: var(--primary_black);
 }
 
-
 // media query 720p and 1366x768
 @media (max-width: 1366px) {
   .navbar_container {
     padding: 0.5rem;
   }
-
 }
