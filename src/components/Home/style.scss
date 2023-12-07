@@ -237,3 +237,28 @@ button {
     height: 50px;
   }
 }
+
+// media query mobile
+@media (max-width: 450px) {
+  .home_title_wrapper {    
+    h1 {
+      font-size: 50px;
+    }
+
+    h3 {
+      font-size: 16px;
+    }    
+
+    h4 {
+      font-size: 14px;
+      // width: 80%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        margin: 20px;
+      }
+    }
+  }
+}
