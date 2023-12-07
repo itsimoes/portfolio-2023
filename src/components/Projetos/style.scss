@@ -9,6 +9,12 @@
   padding-bottom: 60px;
 }
 
+.projetos_carousel_wrapper {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+}
+
 .projetos_carousel_card {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 40px;
   height: 398px;
@@ -144,5 +150,38 @@
     content: "Em breve...";
     position: absolute;
     font-size: 25px;
+  }
+}
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  .projetos_carousel_wrapper {
+    height: 350px;
+  }
+
+  .projetos_carousel_card {
+    width: 500px;
+    height: 284px;
+  }
+
+  .projetos_carousel_card_mobile {
+    width: 106px;
+    height: 200px;
+  }
+
+  #projetos_lp_title_2 {
+    padding-bottom: 30px;
+  }
+
+  .projetos_lp_card {
+    width: 200px;
+  }
+
+  .projetos_lp_card_construction {
+    width: 200px;    
+  }
+
+  #projetos_lp_card_5::before {
+    font-size: 18px;
   }
 }

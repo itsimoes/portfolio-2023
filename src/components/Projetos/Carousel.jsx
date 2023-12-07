@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
+import './style.scss'
 
 import barrosMobile from "../../assets/barrosMobile.png";
 import disctionaryMobile from "../../assets/dictionaryMobile.png";
@@ -177,7 +178,7 @@ export default class Example extends Component {
   render() {
     return (
       <div
-        style={{ width: "80%", height: "500px", margin: "0 auto" }}
+        className="projetos_carousel_wrapper"
         onTouchStart={this.handleTouchStart}
         onTouchMove={this.handleTouchMove}
       >
