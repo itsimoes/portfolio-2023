@@ -186,3 +186,26 @@
     }
   }
 }
+
+// media query mobile
+@media (max-width: 450px) { 
+
+  .contact_wrapper {
+    padding-bottom: 50px;
+    height: auto;
+  }
+  .contact_message_container {
+    width: 80%;
+    text-align: center;
+    padding-right: 0;
+  }
+  #contact_message_1 {
+    font-size: 35px;
+  }
+
+  #contact_message_2 {
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
