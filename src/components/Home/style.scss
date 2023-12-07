@@ -16,17 +16,16 @@
     // transparent 50.5%
     var(--primary_gray) 50%
   );
-  // url("../../assets/gray_concrete.jpg");
 }
 
 .home_avatar {
   width: 150px;
   height: 150px;
   background-image: url("../../assets/it_avatar.png");  
-  background-size: 150px;
+  background-size: cover;
   border: 7px solid var(--primary_white);
   border-radius: 50%;  
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .home_title_wrapper {
@@ -214,5 +213,27 @@ button {
       width 0.25s ease-out 0.5s,
       // And then exanding width
       height 0.25s ease-out 0.75s; // And finally height
+  }
+}
+
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  .home_avatar_wrapper {
+    padding: 3rem;
+  }
+
+  .home_avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .home_link_wrapper {
+    margin: 3rem;
+  }
+
+  .home_social_media_icon_container {
+    width: 50px;
+    height: 50px;
   }
 }
