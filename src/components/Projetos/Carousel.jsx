@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
 import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
+import './style.scss'
 
 import barrosMobile from "../../assets/barrosMobile.png";
 import disctionaryMobile from "../../assets/dictionaryMobile.png";
@@ -37,7 +38,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <WWWIcon />
               </button>
             </a>
@@ -62,7 +63,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <GithubIcon />
               </button>
             </a>
@@ -71,7 +72,7 @@ export default class Example extends Component {
               rel="noreferrer"
               target="_blank"
             >
-              <button className="projetos_carousel_card_button draw">
+              <button className="projetos_carousel_card_button">
                 <WWWIcon />
               </button>
             </a>          
@@ -97,7 +98,7 @@ export default class Example extends Component {
              rel="noreferrer"
              target="_blank"
            >
-             <button className="projetos_carousel_card_button draw">
+             <button className="projetos_carousel_card_button">
                <GithubIcon />
              </button>
            </a>
@@ -106,7 +107,7 @@ export default class Example extends Component {
              rel="noreferrer"
              target="_blank"
            >
-             <button className="projetos_carousel_card_button draw">
+             <button className="projetos_carousel_card_button">
                <WWWIcon />
              </button>
            </a>
@@ -177,7 +178,7 @@ export default class Example extends Component {
   render() {
     return (
       <div
-        style={{ width: "80%", height: "500px", margin: "0 auto" }}
+        className="projetos_carousel_wrapper"
         onTouchStart={this.handleTouchStart}
         onTouchMove={this.handleTouchMove}
       >

@@ -26,3 +26,12 @@
   padding-right: 30px;
   color: var(--primary_black);
 }
+
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  .navbar_container {
+    padding: 0.5rem;
+  }
+
+}

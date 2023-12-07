@@ -2,11 +2,17 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   background-color: var(--primary_gray);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.projetos_carousel_wrapper {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
 }
 
 .projetos_carousel_card {
@@ -17,6 +23,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .projetos_carousel_card_button_wrapper {
@@ -36,13 +43,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding: 10px;
-  background-color: var(--primary_gray);
+  background-color: var(--primary_white);
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 8px;
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 20px;
+  transition: background-color 0.3s linear;
+
+  path {
+    transition: fill 0.3s linear;
+  }
+}
+
+.projetos_carousel_card_button:hover {
+  background-color: var(--primary_coral);
+  transition: background-color 0.3s linear;
+  path {
+    fill: var(--primary_white);
+    transition: fill 0.3s linear;
+  }
 }
 
 .projetos_carousel_image_wrapper {
@@ -93,6 +114,9 @@
 }
 
 .projetos_lp_title {
+  font-weight: 700;
+}
+#projetos_lp_title_2 {
   padding-bottom: 50px;
 }
 
@@ -126,5 +150,38 @@
     content: "Em breve...";
     position: absolute;
     font-size: 25px;
+  }
+}
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  .projetos_carousel_wrapper {
+    height: 350px;
+  }
+
+  .projetos_carousel_card {
+    width: 500px;
+    height: 284px;
+  }
+
+  .projetos_carousel_card_mobile {
+    width: 106px;
+    height: 200px;
+  }
+
+  #projetos_lp_title_2 {
+    padding-bottom: 30px;
+  }
+
+  .projetos_lp_card {
+    width: 200px;
+  }
+
+  .projetos_lp_card_construction {
+    width: 200px;    
+  }
+
+  #projetos_lp_card_5::before {
+    font-size: 18px;
   }
 }
