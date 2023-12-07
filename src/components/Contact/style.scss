@@ -82,7 +82,7 @@
 }
 
 .contact_textarea {
-  width: 400px;
+  width: 407px;
   height: 193px;
   box-sizing: border-box;
   resize: none;
@@ -133,10 +133,56 @@
     margin-top: 30px;
   
     //text
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.20000000298023224px;
     color: var(--primary_coral);
   }
   
+
+// media query 720p and 1366x768
+@media (max-width: 1366px) {
+  #contact_message_1 {
+    font-size: 50px;
+  }
+
+  #contact_message_2 {
+    font-size: 30px;
+  }
+
+  .contact_form_title {
+    margin-bottom: 10px;
+  }
+
+  .contact_form_wrapper {
+    width: 300px;
+    height: 450px;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .contact_input_field {
+      width: 100%;
+      height: 60px;
+      font-size: 14px;
+    }
+
+    .contact_textarea {
+      width: 325px;
+      font-size: 14px;
+    }
+
+    .contact_submit_button {
+      width: 150px;
+      height: 60px;
+      font-size: 14px;
+    }
+
+    #confirmation_message {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}
